@@ -48,7 +48,7 @@ SELECT LOCATION, MAX(CAST(total_deaths AS int))AS TOTAL_DEATH
 FROM covidproject
 WHERE continent IS NOT NULL AND (DATEPART(YY,DATE)=2021)
 GROUP BY location
-ORDER BY TOTAL_DEATH DESC
+ORDER BY TOTAL_DEATH DESC;
 
 #2020
 SELECT LOCATION, MAX(CAST(total_deaths AS int))AS TOTAL_DEATH
@@ -136,4 +136,4 @@ FROM
 WHERE 
 	continent IS NOT NULL
 GROUP BY continent
-ORDER BY total_death_count DESC
+ORDER BY total_death_count DESC;
